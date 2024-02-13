@@ -9,6 +9,8 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import javax.annotation.PostConstruct;
+
 
 @Component
 @Log4j
@@ -18,6 +20,16 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     @Value("${bot.token}")
     private String botToken;
+
+    private UpdateController updateController;
+    public TelegramBot(UpdateController updateController){
+        this.updateController =updateController;
+    }
+
+    @PostConstruct
+    public void init() {
+        updateController.registerBot(this);
+    }
 
 
     @Override
@@ -32,20 +44,21 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
-        var originalMessage = update.getMessage();
-        String messageText = originalMessage.getText();
-        log.debug(messageText);
-        var response = new SendMessage();
-        response.setChatId(originalMessage.getChatId().toString());
-        if(messageText.contains("Привет")) {
-            response.setText("Привет" +  originalMessage.getFrom().getUserName());
-        } else if(messageText.contains("Пока")) {
-            response.setText("Пока" +  originalMessage.getFrom().getUserName());
-        } else {
-            response.setText(messageText);
-        }
-
-        sendAnswerMessage(response);
+//        var originalMessage = update.getMessage();
+//        String messageText = originalMessage.getText();
+//        log.debug(messageText);
+//        var response = new SendMessage();
+//        response.setChatId(originalMessage.getChatId().toString());
+//        if(messageText.contains("Привет")) {
+//            response.setText("Привет" +  originalMessage.getFrom().getUserName());
+//        } else if(messageText.contains("Пока")) {
+//            response.setText("Пока" +  originalMessage.getFrom().getUserName());
+//        } else {
+//            response.setText(messageText);
+//        }
+//
+//        sendAnswerMessage(response);
+        updateController.processUpdate(update);
     }
 
     public void sendAnswerMessage(SendMessage message) {
