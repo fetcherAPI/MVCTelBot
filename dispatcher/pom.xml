@@ -16,6 +16,7 @@
         <maven.compiler.target>21</maven.compiler.target>
         <telegrambot.strater.version>5.0.1</telegrambot.strater.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
     </properties>
 
 
@@ -50,5 +51,7 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <scope>annotationProcessor</scope>
         </dependency>
+
+
     </dependencies>
 </project>
