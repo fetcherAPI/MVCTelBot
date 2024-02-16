@@ -8,6 +8,10 @@ import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
+import static org.example.model.RabbitQueue.DOC_MESSAGE_UPDATE;
+import static org.example.model.RabbitQueue.PHOTO_MESSAGE_UPDATE;
+import static org.example.model.RabbitQueue.TEXT_MESSAGE_UPDATE;
+
 @Component
 @Log4j
 
@@ -62,18 +66,18 @@ public class UpdateController {
     }
 
     private void processPhotoMessage(Update update) {
-        updateProducer.produce("PHOTO_MESSAGE_UPDATE", update);
+        updateProducer.produce(PHOTO_MESSAGE_UPDATE, update);
         setFileIsReceivedView(update);
     }
 
 
 
     private void processDocMessage(Update update) {
-        updateProducer.produce("DOC_MESSAGE_UPDATE", update);
+        updateProducer.produce(DOC_MESSAGE_UPDATE, update);
         setFileIsReceivedView(update);
     }
 
     private void processTextMessage(Update update) {
-        updateProducer.produce("TEXT_MESSAGE_UPDATE", update);
+        updateProducer.produce(TEXT_MESSAGE_UPDATE, update);
     }
 }
