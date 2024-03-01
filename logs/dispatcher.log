@@ -9,3 +9,20 @@
 2024-02-13 14:48:39 DEBUG UpdateProducerImpl:13 - fdsaf dsa fd sa
 2024-02-13 14:48:50 ERROR UpdateController:35 - Received unsupported message type Update(updateId=161049680, message=null, inlineQuery=null, chosenInlineQuery=null, callbackQuery=null, editedMessage=Message(messageId=22, from=User(id=861011018, firstName=Zhaisan, isBot=false, lastName=null, userName=ZhaisanFE, languageCode=en, canJoinGroups=null, canReadAllGroupMessages=null, supportInlineQueries=null, isPremium=null, addedToAttachmentMenu=null), date=1707814120, chat=Chat(id=861011018, type=private, title=null, firstName=Zhaisan, lastName=null, userName=ZhaisanFE, photo=null, description=null, inviteLink=null, pinnedMessage=null, stickerSetName=null, canSetStickerSet=null, permissions=null, slowModeDelay=null, bio=null, linkedChatId=null, location=null, messageAutoDeleteTime=null, hasPrivateForwards=null, HasProtectedContent=null, joinToSendMessages=null, joinByRequest=null), forwardFrom=null, forwardFromChat=null, forwardDate=null, text=fdsaf dsa fd sa2, entities=null, captionEntities=null, audio=null, document=null, photo=null, sticker=null, video=null, contact=null, location=null, venue=null, animation=null, pinnedMessage=null, newChatMembers=[], leftChatMember=null, newChatTitle=null, newChatPhoto=null, deleteChatPhoto=null, groupchatCreated=null, replyToMessage=null, voice=null, caption=null, superGroupCreated=null, channelChatCreated=null, migrateToChatId=null, migrateFromChatId=null, editDate=1707814131, game=null, forwardFromMessageId=null, invoice=null, successfulPayment=null, videoNote=null, authorSignature=null, forwardSignature=null, mediaGroupId=null, connectedWebsite=null, passportData=null, forwardSenderName=null, poll=null, replyMarkup=null, dice=null, viaBot=null, senderChat=null, proximityAlertTriggered=null, messageAutoDeleteTimerChanged=null, isAutomaticForward=null, hasProtectedContent=null, webAppData=null, videoChatStarted=null, videoChatEnded=null, videoChatParticipantsInvited=null, videoChatScheduled=null), channelPost=null, editedChannelPost=null, shippingQuery=null, preCheckoutQuery=null, poll=null, pollAnswer=null, myChatMember=null, chatMember=null, chatJoinRequest=null)
 2024-02-13 14:49:48 DEBUG UpdateProducerImpl:13 - 
+2024-03-01 10:19:42 DEBUG UpdateProducerImpl:15 - 
+2024-03-01 10:30:20 DEBUG UpdateProducerImpl:15 - gfdsgfds
+2024-03-01 10:30:29 DEBUG UpdateProducerImpl:15 - 
+2024-03-01 10:46:57 DEBUG UpdateProducerImpl:15 - fdsafdsafdsafdsa
+2024-03-01 10:47:08 DEBUG UpdateProducerImpl:15 - fdsafdsafdsa
+2024-03-01 10:47:29 DEBUG UpdateProducerImpl:15 - test 4
+2024-03-01 11:43:00 DEBUG UpdateProducerImpl:15 - fdsaf dsa
+2024-03-01 13:09:21 DEBUG UpdateProducerImpl:15 - hello 323
+2024-03-01 13:11:09 DEBUG UpdateProducerImpl:15 - gfdsgf ds hello
+2024-03-01 13:23:56 DEBUG UpdateProducerImpl:15 - fdsafd satest safd sa323
+2024-03-01 13:23:56 DEBUG UpdateProducerImpl:17 - fdsafd satest safd sa323
+2024-03-01 13:23:56 DEBUG UpdateProducerImpl:24 - fdsafd satest safd sa323
+2024-03-01 13:23:56 DEBUG UpdateProducerImpl:15 - fdsafd satest safd sa323
+2024-03-01 13:23:56 DEBUG UpdateProducerImpl:15 - fdsafd satest safd sa323
+2024-03-01 13:23:56 DEBUG UpdateProducerImpl:23 - fdsafd satest safd sa323
+2024-03-01 13:23:57 DEBUG UpdateProducerImpl:24 - fdsafd satest safd sa323
+2024-03-01 13:44:54 DEBUG UpdateProducerImpl:24 - dhsjdhsjkhds
